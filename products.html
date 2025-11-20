@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Cashew Products - Ganesh Exports offers cashew kernels, raw cashew nuts, shells, and husk. Quality cashew products with Pan-India delivery.">
+    <title>Products - Ganesh Exports</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-cashew">
+                <img src="image/kaju cursor.png" alt="Cashew Loader">
+            </div>
+            <div class="loader-text">
+                <h3>Ganesh Exports...</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="customCursor">
+        <img src="image/kaju cursor.png" alt="Cursor">
+    </div>
+
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <a href="tel:+919274963463" class="top-bar-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 92749 63463</span>
+                    </a>
+                    <a href="mailto:Info@ganeshexport.com" class="top-bar-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Info@ganeshexport.com</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <img src="image/logo (2).png" alt="Ganesh Exports Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="logo-fallback" style="display: none;">
+                            <div class="logo-icon">
+                                <img src="image/kaju cursor.png" alt="Cashew Logo" class="logo-cashew-img">
+                            </div>
+                            <div class="logo-text">
+                                <span class="logo-main">Ganesh Exports</span>
+                                <span class="logo-tagline">Global Exporters</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-dropdown">
+                        <a href="products.html" class="nav-link dropdown-toggle active">
+                            Products <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="product-detail.html?id=raw-cashew-nuts">Raw Cashew Nuts</a></li>
+                            <li><a href="product-detail.html?id=cashew-kernels">Cashew Kernels</a></li>
+                            <li><a href="product-detail.html?id=cashew-broken">Cashew Broken</a></li>
+                            <li><a href="product-detail.html?id=cashew-ssp">Cashew SSP</a></li>
+                            <li><a href="product-detail.html?id=cashew-husk">Cashew Husk</a></li>
+                            <li><a href="product-detail.html?id=cashew-nut-shell">Cashew Shell</a></li>
+                            <li><a href="product-detail.html?id=cashew-cake">Cashew Cake</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#why-us" class="nav-link">Why Us</a></li>
+                    <li class="mobile-contact-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="contact.html" class="btn-primary">Contact Us</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: linear-gradient(135deg, rgba(212, 165, 116, 0.1) 0%, rgba(44, 44, 44, 0.3) 100%), url('image/kajumainbg.png') center/cover no-repeat; padding: 150px 0 100px; text-align: center; color: white; position: relative;">
+        <div style="position: relative; z-index: 2;">
+            <div class="container">
+                <h1 style="font-size: 3.5rem; margin-bottom: 1rem; font-family: 'Playfair Display', serif;">Our Products</h1>
+                <p style="font-size: 1.2rem; color: rgba(255, 255, 255, 0.9);">Premium Quality Cashew Products & By-Products</p>
+            </div>
+        </div>
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(26, 26, 26, 0.7) 0%, rgba(44, 44, 44, 0.5) 100%); z-index: 1;"></div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" style="padding: 6rem 0;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Products</span>
+                <h2 class="section-title">Discover Ganesh Exports's Premium Products</h2>
+                <p class="section-description">Explore our wide range of premium cashew products and by-products</p>
+            </div>
+            <div class="products-grid">
+                <!-- Raw Cashew Nuts -->
+                <div class="product-card" id="raw-cashew-nuts" data-href="product-detail.html?id=raw-cashew-nuts">
+                    <div class="product-image">
+                        <img src="image/raw-cashew-nuts.jpeg" alt="Raw Cashew Nuts">
+                    </div>
+                    <div class="product-content">
+                        <h3>Raw Cashew Nuts</h3>
+                        <p>Our top-quality raw cashew nuts are perfect for processing into kernels, butter, and other cashew products. Packed with essential nutrients, these nuts ensure a steady, reliable supply for your production line.</p>
+                        <div class="product-grades">
+                            <span class="grade-tag">Benin</span>
+                            <span class="grade-tag">Togo</span>
+                            <span class="grade-tag">Ogbomosho</span>
+                            <span class="grade-tag">Ivory Coast</span>
+                            <span class="grade-tag">Tanzania</span>
+                            <span class="grade-tag">Guinea-Bissau (GNIBICARE)</span>
+                            <span class="grade-tag">Ghana</span>
+                        </div>
+                        <a href="product-detail.html?id=raw-cashew-nuts" class="product-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Cashew Kernels -->
+                <div class="product-card" id="cashew-kernels" data-href="product-detail.html?id=cashew-kernels">
+                    <div class="product-image">
+                        <img src="image/cashew-kernels.jpeg" alt="Cashew Kernels">
+                    </div>
+                    <div class="product-content">
+                        <h3>Cashew Kernels</h3>
+                        <p>Our premium cashew kernels are ideal for any business, whether you're in food or retail. Sourced from top farms, these cashews deliver a rich, consistent taste that your customers will love.</p>
+                        <div class="product-grades">
+                            <span class="grade-tag">W180</span>
+                            <span class="grade-tag">W240</span>
+                            <span class="grade-tag">W320</span>
+                        </div>
+                        <a href="product-detail.html?id=cashew-kernels" class="product-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Cashew Broken -->
+                <div class="product-card" id="cashew-broken" data-href="product-detail.html?id=cashew-broken">
+                    <div class="product-image">
+                        <img src="image/swp-cashew-nut.webp" alt="Cashew Broken" onerror="this.src='image/kaju2.jpg'">
+                    </div>
+                    <div class="product-content">
+                        <h3>Cashew Broken</h3>
+                        <p>Cashew Broken are premium quality split cashew kernels. These are perfect for confectionery, baking, and food processing industries. Our broken cashews maintain excellent quality and consistency.</p>
+                        <div class="product-grades">
+                            <span class="grade-tag">JH</span>
+                            <span class="grade-tag">JK</span>
+                            <span class="grade-tag">LWP</span>
+                            <span class="grade-tag">SWP</span>
+                        </div>
+                        <a href="product-detail.html?id=cashew-broken" class="product-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Cashew SSP -->
+                <div class="product-card" id="cashew-ssp" data-href="product-detail.html?id=cashew-ssp">
+                    <div class="product-image">
+                        <img src="image/cashew-ssp.png" alt="Cashew SSP" onerror="this.src='image/kaju3.jpg'">
+                    </div>
+                    <div class="product-content">
+                        <h3>Cashew SSP</h3>
+                        <p>Cashew SSP (Split Scorched Pieces) are high-quality split cashew kernels with a light roasted appearance. These are ideal for various food applications and offer excellent value for bulk buyers.</p>
+                        <div class="product-grades">
+                            <span class="grade-tag">SSP</span>
+                            <span class="grade-tag">BB</span>
+                        </div>
+                        <a href="product-detail.html?id=cashew-ssp" class="product-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Cashew Husk -->
+                <div class="product-card" id="cashew-husk" data-href="product-detail.html?id=cashew-husk">
+                    <div class="product-image">
+                        <img src="image/cashew-husk.webp" alt="Cashew Husk" onerror="this.src='image/cashew-husk-powder.webp'; this.onerror=null;">
+                    </div>
+                    <div class="product-content">
+                        <h3>Cashew Husk</h3>
+                        <p>Our nutrient-rich cashew husk is ideal for animal feed, composting, and producing natural dyes. This sustainable by-product offers antioxidant benefits and cost-effective solutions for your agricultural business. We also offer premium cashew husk powder for various industrial and agricultural applications.</p>
+                        <div class="product-grades">
+                            <span class="grade-tag">Husk</span>
+                            <span class="grade-tag">Powder</span>
+                        </div>
+                        <a href="product-detail.html?id=cashew-husk" class="product-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Cashew Shell -->
+                <div class="product-card" id="cashew-nut-shell" data-href="product-detail.html?id=cashew-nut-shell">
+                    <div class="product-image">
+                        <img src="image/cashew-nuts-shell.webp" alt="Cashew Shell">
+                    </div>
+                    <div class="product-content">
+                        <h3>Cashew Shell</h3>
+                        <p>Our cashew shells are processed for purity and are ideal for biofuel and CNSL production. These versatile shells support sustainable, cost-effective industrial practices, helping your business go green.</p>
+                        <a href="product-detail.html?id=cashew-nut-shell" class="product-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Cashew Cake -->
+                <div class="product-card" id="cashew-cake" data-href="product-detail.html?id=cashew-cake">
+                    <div class="product-image">
+                        <img src="image/cashew-cake.webp" alt="Cashew Cake" onerror="this.src='image/kaju1.jpg'">
+                    </div>
+                    <div class="product-content">
+                        <h3>Cashew Cake</h3>
+                        <p>Cashew cake is a valuable by-product obtained after oil extraction from cashew kernels. Rich in protein and nutrients, it's an excellent ingredient for animal feed and organic fertilizers.</p>
+                        <a href="product-detail.html?id=cashew-cake" class="product-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Products Info -->
+    <section style="background: var(--bg-light); padding: 6rem 0;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Product Information</span>
+                <h2 class="section-title">Quality Assurance & Packaging</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Quality Certified</h3>
+                    <p>All our products undergo rigorous quality checks and meet international standards.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h3>Custom Packaging</h3>
+                    <p>We offer custom packaging solutions tailored to your business needs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Pan-India delivery with timely and reliable shipping services.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Competitive Pricing</h3>
+                    <p>Transparent pricing with bulk discounts for large orders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="background: var(--primary-color); padding: 4rem 0; text-align: center; color: white;">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem; color: white;">Interested in Our Products?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; color: rgba(255, 255, 255, 0.9);">Contact us today for bulk orders</p>
+            <a href="contact.html" class="btn-primary btn-large" style="background: white; color: var(--primary-color);">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ganesh Exports</h3>
+                    <p>Premium cashew suppliers in India, delivering quality and excellence across the nation.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="index.html#why-us">Why Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="product-detail.html?id=raw-cashew-nuts">Raw Cashew Nuts</a></li>
+                        <li><a href="product-detail.html?id=cashew-kernels">Cashew Kernels</a></li>
+                        <li><a href="product-detail.html?id=cashew-broken">Cashew Broken</a></li>
+                        <li><a href="product-detail.html?id=cashew-ssp">Cashew SSP</a></li>
+                        <li><a href="product-detail.html?id=cashew-husk">Cashew Husk</a></li>
+                        <li><a href="product-detail.html?id=cashew-nut-shell">Cashew Shell</a></li>
+                        <li><a href="product-detail.html?id=cashew-cake">Cashew Cake</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91 92749 63463</li>
+                        <li><i class="fas fa-envelope"></i> Info@ganeshexport.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> A-9, Samruddhi Industrial Estate, Kathwada-Singarva Rd, Kathwada, Ahmedabad, Gujarat 382430, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ganesh Exports. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
